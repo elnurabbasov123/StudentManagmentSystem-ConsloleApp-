@@ -1,4 +1,6 @@
 package service.menyu.inter;
 
-public interface MenyuAddTeacherServiceInter extends MenyuService{
+import service.inter.SaveableProcess;
+
+public interface MenyuAddTeacherServiceInter extends SaveableProcess {
 }

@@ -1,7 +1,7 @@
 package service.menyu.inter;
 
-import util.Menyu;
+import service.inter.SaveableProcess;
 
-public interface MenyuRegisterServiceInter extends MenyuService {
+public interface MenyuRegisterServiceInter extends SaveableProcess {
 
 }

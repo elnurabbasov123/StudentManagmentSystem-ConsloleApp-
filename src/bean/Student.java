@@ -1,6 +1,8 @@
 package bean;
 
-public class Student extends Person{
+import java.io.Serializable;
+
+public class Student extends Person {
     private String schoolName;
     private double sholarship;
 

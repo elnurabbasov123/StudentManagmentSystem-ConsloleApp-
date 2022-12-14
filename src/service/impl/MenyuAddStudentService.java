@@ -1,4 +1,4 @@
-package service.menyu.impl;
+package service.impl;
 
 import bean.Config;
 import bean.Student;
@@ -6,9 +6,9 @@ import service.menyu.inter.MenyuAddStudentServiceInter;
 
 import java.util.Scanner;
 
-public class MenyuAddStudentService implements MenyuAddStudentServiceInter {
+public class MenyuAddStudentService  implements MenyuAddStudentServiceInter {
     @Override
-    public void process() {
+    public void processLogic() {
         System.out.println("Enter name :");
         Scanner sc=new Scanner(System.in);
         String name=sc.nextLine();
@@ -23,6 +23,5 @@ public class MenyuAddStudentService implements MenyuAddStudentServiceInter {
 
         Config.instance().appendStudent(s);
         System.out.println("Student added");
-
     }
 }

@@ -1,8 +1,8 @@
 package util;
 
 import bean.Config;
-import service.menyu.impl.*;
-import service.menyu.inter.MenyuService;
+import service.impl.*;
+import service.inter.Process;
 
 public enum Menyu {
     LOGIN(1,"Login",new MenyuLoginService()),
@@ -14,13 +14,13 @@ public enum Menyu {
     UNKNOWN;
 
     private String label;
-    private MenyuService service;
+    private Process service;
     private int number;
 
     Menyu(){
 
     }
-    Menyu(int number,String label,MenyuService service){
+    Menyu(int number, String label, Process service){
         this.label=label;
         this.service=service;
         this.number=number;

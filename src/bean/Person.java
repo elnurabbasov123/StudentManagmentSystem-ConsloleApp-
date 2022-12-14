@@ -2,7 +2,7 @@ package bean;
 
 import java.io.Serializable;
 
-public abstract class Person implements Serializable {
+public abstract class Person implements Serializable{
     private int age;
     private String surname;
     private String name;

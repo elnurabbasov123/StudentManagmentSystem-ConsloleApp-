@@ -1,5 +1,7 @@
 package bean;
 
+import util.FIleUtility;
+
 import java.io.Serializable;
 
 public class Config implements Serializable {
@@ -63,6 +65,18 @@ public class Config implements Serializable {
             config=new Config();
         }
         return config;
+    }
+    public static void initialize(){
+        Object obj=FIleUtility.readFileDeserialize("app.obj");
+        if(obj == null){
+            return;
+        }
+        if(obj instanceof Config){
+            config=(Config) obj;
+        }
+    }
+    public static void save(){
+        FIleUtility.writeObjectToFile(Config.instance(),"app.obj");
     }
 
 }

@@ -1,14 +1,13 @@
-package service.menyu.impl;
+package service.impl;
 
 import bean.Config;
 import service.menyu.inter.MenyuLoginServiceInter;
-import service.menyu.inter.MenyuService;
 
 import java.util.Scanner;
 
 public class MenyuLoginService implements MenyuLoginServiceInter {
     @Override
-    public void process() {
+    public void processLogic() {
         Scanner sc=new Scanner(System.in);
         System.out.println("Username: ");
         String userName=sc.nextLine();

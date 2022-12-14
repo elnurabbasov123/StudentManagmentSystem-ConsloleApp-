@@ -1,4 +1,6 @@
 package service.menyu.inter;
 
-public interface MenyuLoginServiceInter extends MenyuService{
+import service.inter.Process;
+
+public interface MenyuLoginServiceInter extends Process {
 }

@@ -1,15 +1,14 @@
-package service.menyu.impl;
+package service.impl;
 
 import bean.Config;
-import bean.Student;
 import bean.Teacher;
 import service.menyu.inter.MenyuAddTeacherServiceInter;
 
 import java.util.Scanner;
 
-public class MenyuAddTeacherService implements MenyuAddTeacherServiceInter {
+public class MenyuAddTeacherService implements  MenyuAddTeacherServiceInter {
     @Override
-    public void process() {
+    public void processLogic() {
         System.out.println("Enter name :");
         Scanner sc=new Scanner(System.in);
         String name=sc.nextLine();
@@ -24,5 +23,6 @@ public class MenyuAddTeacherService implements MenyuAddTeacherServiceInter {
 
         Config.instance().appendTeacher(t);
         System.out.println("Teacher added");
+
     }
 }
